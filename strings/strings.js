@@ -18,11 +18,11 @@ let newString = 'This is a new string'
 //
 //  Get the data type of the 'getMyDataType' variable and save it into
 //  the variable 'gotDataType'
-let getMyDataType = "This is a string"
+let getMyDataType = "This is a new string"
 //
 ////////////////////// YOUR CODE BELOW THIS LINE ///////////////////////
 
-let gotDataType
+let gotDataType = typeof getMyDataType
 
 ////////////////////////////////////////////////////////////////////////
 
@@ -38,7 +38,7 @@ let getMyLenght = "Get the length of this string"
 //
 ////////////////////// YOUR CODE BELOW THIS LINE ///////////////////////
 
-let myLength
+let myLength = getMyLenght.length
 
 ////////////////////////////////////////////////////////////////////////
 
@@ -57,7 +57,7 @@ let concat3 = "father!"
 //
 ////////////////////// YOUR CODE BELOW THIS LINE ///////////////////////
 
-let concatStrings
+let concatStrings = concat1.concat(concat2, concat3)
 
 ////////////////////////////////////////////////////////////////////////
 
@@ -75,7 +75,7 @@ let subString = "out"
 //
 ////////////////////// YOUR CODE BELOW THIS LINE ///////////////////////
 
-let stringContains
+let stringContains = mainString.includes(subString)
 
 ////////////////////////////////////////////////////////////////////////
 
@@ -93,7 +93,10 @@ let subStringIgnoreCase = "friends"
 //
 ////////////////////// YOUR CODE BELOW THIS LINE ///////////////////////
 
-let stringContainsIgnoreCase
+let mainStringLowerCase = mainStringIgnoreCase.toLowerCase()
+let subStringLowerCase = subStringIgnoreCase.toLowerCase()
+
+let stringContainsIgnoreCase = mainStringLowerCase.includes(subStringLowerCase)
 
 ////////////////////////////////////////////////////////////////////////
 
@@ -109,7 +112,7 @@ let getFirstCharacter = "You need my first character"
 //
 ////////////////////// YOUR CODE BELOW THIS LINE ///////////////////////
 
-let firstCharacter
+let firstCharacter = getFirstCharacter.charAt(0)
 
 ////////////////////////////////////////////////////////////////////////
 
@@ -125,7 +128,7 @@ let getFirstFourCharacters = "You need my first four characters"
 //
 ////////////////////// YOUR CODE BELOW THIS LINE ///////////////////////
 
-let firstFourCharacters
+let firstFourCharacters = getFirstFourCharacters.substring(0,4)
 
 ////////////////////////////////////////////////////////////////////////
 
@@ -141,7 +144,8 @@ let getLastCharacter = "You need my last character"
 //
 ////////////////////// YOUR CODE BELOW THIS LINE ///////////////////////
 
-let lastCharacter
+let lastIndex = getLastCharacter.length - 1
+let lastCharacter = getLastCharacter.charAt(lastIndex)
 
 ////////////////////////////////////////////////////////////////////////
 
@@ -157,7 +161,8 @@ let getLastSixCharacters = "You need my last six characters"
 //
 ////////////////////// YOUR CODE BELOW THIS LINE ///////////////////////
 
-let lastSixCharacters
+let firstIndex = getLastSixCharacters.length - 6
+let lastSixCharacters = getLastSixCharacters.substring(firstIndex)
 
 ////////////////////////////////////////////////////////////////////////
 
@@ -175,7 +180,7 @@ let checkEquality2 = "Are we equal?"
 //
 ////////////////////// YOUR CODE BELOW THIS LINE ///////////////////////
 
-let stringsAreEqual
+let stringsAreEqual = checkEquality1 === checkEquality2
 
 ////////////////////////////////////////////////////////////////////////
 
@@ -193,7 +198,7 @@ let checkEqualityIgnoreCase2 = "are we EQUAL?"
 //
 ////////////////////// YOUR CODE BELOW THIS LINE ///////////////////////
 
-let stringsAreEqualIgnoreCase
+let stringsAreEqualIgnoreCase = checkEqualityIgnoreCase1.toLowerCase === checkEqualityIgnoreCase2.toLowerCase
 
 ////////////////////////////////////////////////////////////////////////
 
@@ -209,7 +214,7 @@ let replaceMe = "John just moved to Montreal. John will be meeting his roomate s
 //
 ////////////////////// YOUR CODE BELOW THIS LINE ///////////////////////
 
-let replacedString
+let replacedString = replaceMe.replace(/John/g, "Michael")
 
 ////////////////////////////////////////////////////////////////////////
 
@@ -226,7 +231,7 @@ let removeMe = "We will going to be leaving at noon sharp."
 //
 ////////////////////// YOUR CODE BELOW THIS LINE ///////////////////////
 
-let removedString
+let removedString = removeMe.replace(/going to /, "")
 
 ////////////////////////////////////////////////////////////////////////
 
@@ -245,7 +250,7 @@ let targetString1 = "THE-QUICK-BROWN-FOX-JUMPS-OVER-THE-LAZY-DOG"
 //
 ////////////////////// YOUR CODE BELOW THIS LINE ///////////////////////
 
-
+testString1 = testString1.toUpperCase().replace(/ /g, "-")
 
 ////////////////////////////////////////////////////////////////////////
 
@@ -265,7 +270,7 @@ let targetString2 = "i am the second best, you are the first best!"
 //
 ////////////////////// YOUR CODE BELOW THIS LINE ///////////////////////
 
-
+testString2 = testString2.toLowerCase().replace(/first sentence./g, "second best,").replace(/second sentence/g, "first best") + "!"
 
 ////////////////////////////////////////////////////////////////////////
 
