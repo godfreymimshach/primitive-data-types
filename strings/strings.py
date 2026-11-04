@@ -6,7 +6,7 @@
 #
 ###################### YOUR CODE BELOW THIS LINE #######################
 
-newString = None
+newString = "New strings"
 
 ########################################################################
 
@@ -22,7 +22,7 @@ getMyDataType = "This is a string"
 #
 ###################### YOUR CODE BELOW THIS LINE #######################
 
-gotDataType = None
+gotDataType = type(getMyDataType)
 
 ########################################################################
 
@@ -39,7 +39,7 @@ getMyLenght = "Get the length of this string"
 #
 ###################### YOUR CODE BELOW THIS LINE #######################
 
-myLength = None
+myLength = len(getMyLenght)
 
 ########################################################################
 
@@ -58,7 +58,7 @@ concat3 = "father!"
 #
 ###################### YOUR CODE BELOW THIS LINE #######################
 
-concatStrings = None
+concatStrings = concat1 + concat2 + concat3
 
 ########################################################################
 
@@ -78,7 +78,7 @@ repeatMe = "Let it snow! "
 #
 ###################### YOUR CODE BELOW THIS LINE #######################
 
-repeatedString = None
+repeatedString = repeatMe*repeatTimes
 
 ########################################################################
 
