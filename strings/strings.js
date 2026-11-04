@@ -285,7 +285,7 @@ testString2 = testString2.toLowerCase().replace(/first sentence./g, "second best
 //  strings you can add the backwards slash e.g. \" before a character to invoke
 //  an alternative interpretation of the character. This is called
 //  ESCAPING and is used often by programmers
-let escapedString
+let escapedString = "My professor said: \"Study hard and you will succeed\" \nI replied: \"Thanks for the tip!\""
 //   Uncomment the expression below to see the outcome of the printed variable
 //
 ////////////////////// YOUR CODE BELOW THIS LINE ///////////////////////
