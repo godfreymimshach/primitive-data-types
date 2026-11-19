@@ -58,10 +58,10 @@ student2Chuck = random.randint(4, 6)
 #
 ###################### YOUR CODE BELOW THIS LINE #######################
 
-numberOfWood = tongueTwiser.count("wood") + tongueTwiser.count("wood,") + tongueTwiser.count("wood.") + tongueTwiser.count("wood?")
+numberOfWood = tongueTwiser.count("wood ") + tongueTwiser.count("wood,") + tongueTwiser.count("wood.") + tongueTwiser.count("wood?")
 numberOfChuck = tongueTwiser.count(" chuck")
 
-bothAtLeastOneCorrect = (student2Wood == numberOfWood or student2Chuck == numberOfChuck) and (student1Wood == numberOfWood or student1Chuck == numberOfChuck)
+bothAtLeastOneCorrect = (student1Wood == numberOfWood or student1Chuck == numberOfChuck) and (student1Wood == numberOfWood or student1Chuck == numberOfChuck)
 ########################################################################
 
 
